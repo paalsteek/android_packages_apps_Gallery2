@@ -834,6 +834,7 @@ public class PhotoModule
                 mHandler.sendEmptyMessageDelayed(CAPTURE_ANIMATION_DONE,
                         CaptureAnimManager.getAnimationDuration());
             }
+
             mFocusManager.updateFocusUI(); // Ensure focus indicator is hidden.
 
             boolean isSamsungHDR =
@@ -1101,6 +1102,15 @@ public class PhotoModule
         setCameraState(SNAPSHOT_IN_PROGRESS);
         UsageStatistics.onEvent(UsageStatistics.COMPONENT_CAMERA,
                 UsageStatistics.ACTION_CAPTURE_DONE, "Photo");
+        // Engle, 延迟2500 ms 等待抓图回来
+        synchronized(mCameraDevice) {
+            try {
+                mCameraDevice.wait(2500);
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                Log.d(TAG, "", e);
+            }
+        }
         return true;
     }
 
