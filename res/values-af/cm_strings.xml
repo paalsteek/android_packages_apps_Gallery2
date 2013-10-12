@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2013 The CyanogenMod Project
+<!--
+     Copyright (C) 2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,6 +15,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="filtershow_undo_toast">@string/filtershow_undo</string>
+    <string name="filtershow_redo_toast">@string/filtershow_redo</string>
+    <string name="pref_camera_storage_title">Stoor</string>
+    <string name="pref_camera_picturesize_entry_20_7mp">20.7M pixels</string>
     <string name="pref_camera_picturesize_entry_12_8mp">12.8M pixels</string>
     <string name="pref_camera_picturesize_entry_11_5mp">11.5M pixels</string>
     <string name="pref_camera_picturesize_entry_9mp">9M pixels</string>
@@ -30,8 +35,10 @@
     <string name="pref_camera_picturesize_entry_svga">SVGA</string>
     <string name="pref_camera_picturesize_entry_wvga">WVGA</string>
     <string name="pref_camera_picturesize_entry_wqvga">WQVGA</string>
-    <string name="pref_camera_storage_title">Armazenamento</string>
-    <string name="pref_camera_picturesize_entry_20_7mp">20.7M pixels</string>
-    <string name="pref_camera_picturesize_entry_18mp">18M pixels</string>
-    <string name="pref_camera_picturesize_entry_8_2mp">8.2M pixels</string>
+    <string name="bass_boost_strength">Bas hupstoot</string>
+    <string name="virtualizer_strength">3D-effek</string>
+    <string name="audio_effects">Klank-effekte</string>
+    <string name="headset_plug">Prop in oorfone vir hierdie effekte.</string>
+    <string name="fail_trim">Hierdie video lêer kan nie gesnoei word nie</string>
+    <string name="can_not_trim">Slegs mp4 lêers kan gesnoei word</string>
 </resources>
